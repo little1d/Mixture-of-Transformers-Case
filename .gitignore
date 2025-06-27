@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Machine Learning
+*.pt
+*.pth
+*.ckpt
+swanlog/
+wandb/
+runs/
+logs/
+
+# Jupyter
+.ipynb_checkpoints
+*.ipynb
+
+# Cache
+.cache/
+.python-version
+
+
+# Project Data & Outputs
+data/
+experiments/
+test_data/
+

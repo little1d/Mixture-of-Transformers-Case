@@ -1,0 +1,28 @@
+[project]
+name = "mixture-of-transformers-case"
+version = "0.1.0"
+description = "MoT vs Traditional Transformer comparison for multimodal learning"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "matplotlib>=3.10.3",
+    "numpy>=2.2.6",
+    "pandas>=2.3.0",
+    "pillow>=11.2.1",
+    "scikit-learn>=1.7.0",
+    "torch>=2.7.1",
+    "torchvision>=0.22.1",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0.0", "black>=23.0.0", "flake8>=6.0.0"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.scripts]
+mot-experiment = "src.experiment:main"
